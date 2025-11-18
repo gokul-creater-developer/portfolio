@@ -1,6 +1,184 @@
-body { font-family: Arial; margin:0; padding:0; background:#f4f4f4;}
-.hero { text-align:center; padding:120px 20px; background:white;}
-.accent { color:#4CAF50; }
-.btn { padding:10px 20px; background:#4CAF50; color:white; text-decoration:none; border-radius:5px;}
-.page-title { text-align:center; margin-top:40px;}
-.card { width:300px; margin:20px auto; padding:20px; background:white; border-radius:10px; }
+/*
+ * DARK MINIMAL PORTFOLIO STYLES
+ * File: /static/css/style.css
+ */
+
+
+/* ---------------------------------------------------- */
+
+
+/* 1. Global Reset and Variables */
+
+
+/* ---------------------------------------------------- */
+
+:root {
+    --color-bg-primary: #121212;
+    /* Very dark background */
+    --color-bg-secondary: #1e1e1e;
+    /* Slightly lighter dark for cards/nav */
+    --color-text-light: #e0e0e0;
+    /* Light text */
+    --color-accent: #00bcd4;
+    /* Vibrant Blue/Cyan for accent (DevOps feel) */
+    --color-btn-hover: #0097a7;
+    --font-primary: 'Roboto', sans-serif;
+    --shadow-base: 0 4px 8px rgba(0, 0, 0, 0.4);
+    --shadow-accent: 0 0 15px rgba(0, 188, 212, 0.5);
+    /* Glowing accent */
+}
+
+body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-light);
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* ---------------------------------------------------- */
+
+
+/* 2. Hero Section (index.html) */
+
+
+/* ---------------------------------------------------- */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(145deg, var(--color-bg-primary), #0a0a0a);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.hero h1 .accent {
+    color: var(--color-accent);
+    text-shadow: 0 0 10px rgba(0, 188, 212, 0.7);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #a0a0a0;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--color-accent);
+    color: var(--color-bg-primary);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 188, 212, 0.3);
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--color-btn-hover);
+    transform: translateY(-2px);
+    color: white;
+}
+
+
+/* ---------------------------------------------------- */
+
+
+/* 3. Project Cards (projects.html) */
+
+
+/* ---------------------------------------------------- */
+
+.page-title {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 2.5rem;
+    color: var(--color-accent);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.card {
+    background-color: var(--color-bg-secondary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-base);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 5px solid var(--color-accent);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), var(--shadow-accent);
+}
+
+.card h3 {
+    color: var(--color-accent);
+    margin-top: 0;
+}
+
+
+/* ---------------------------------------------------- */
+
+
+/* 4. DevOps Visuals (Icons) */
+
+
+/* ---------------------------------------------------- */
+
+.tech-icons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: var(--color-accent);
+}
+
+.tech-icon {
+    font-size: 3rem;
+    opacity: 0.8;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.tech-icon:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+/* ---------------------------------------------------- */
+
+
+/* 5. Contact Section */
+
+
+/* ---------------------------------------------------- */
+
+.contact-section {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 2rem;
+}

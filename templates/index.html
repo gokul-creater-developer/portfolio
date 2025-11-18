@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>My Portfolio</title>
-<link rel="stylesheet" href="/static/css/style.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
+
 <body>
-<section class="hero">
-  <h1>Hello, I'm <span class="accent">Your Name</span></h1>
-  <p>Flask Developer | DevOps Enthusiast | CI/CD Engineer</p>
-  <a href="/projects" class="btn">View My Work</a>
-</section>
+
+    <section class="hero">
+        <img src="/static/img/profile.png" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid var(--color-accent); margin-bottom: 20px;">
+
+        <h1>Hello, I'm <span class="accent">Your Name</span></h1>
+        <p>Flask Developer | DevOps Enthusiast | CI/CD Engineer</p>
+
+        <div class="tech-icons">
+            <i class="devicon-jenkins-line tech-icon" title="Jenkins"></i>
+            <i class="devicon-docker-plain tech-icon" title="Docker"></i>
+            <i class="devicon-kubernetes-plain tech-icon" title="Kubernetes"></i>
+            <i class="devicon-amazonwebservices-original tech-icon" title="AWS"></i>
+            <i class="devicon-python-plain tech-icon" title="Python"></i>
+        </div>
+
+        <a href="/projects" class="btn">View My Work</a>
+    </section>
+
 </body>
+
 </html>
