@@ -1,0 +1,6 @@
+body { font-family: Arial; margin:0; padding:0; background:#f4f4f4;}
+.hero { text-align:center; padding:120px 20px; background:white;}
+.accent { color:#4CAF50; }
+.btn { padding:10px 20px; background:#4CAF50; color:white; text-decoration:none; border-radius:5px;}
+.page-title { text-align:center; margin-top:40px;}
+.card { width:300px; margin:20px auto; padding:20px; background:white; border-radius:10px; }
