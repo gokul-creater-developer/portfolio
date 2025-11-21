@@ -50,7 +50,7 @@ def test_api_status():
 # =====================================================
 
 YOUR_EMAIL = "gokuleo2002@gmail.com"
-APP_PASSWORD = "euku ktct aifm cdhd "    # Gmail App Password
+APP_PASSWORD = "euku ktct aifm cdhd"    # Gmail App Password
 TO_EMAIL = "gokulnathravikumar8888@gmail.com"
 
 def send_email(message):
